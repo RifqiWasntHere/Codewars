@@ -8,10 +8,15 @@ Example(Input => Output):
 */
 
 function digitize(n) {
-  let arr = ('' + n).split('').map(Number); result = []
-  for (var i = arr.length-1; i >= 0; i--) {result.push(arr[i])}
-  
+  let arr = ('' + n).split('').map(Number)
+  result = []
+  for (var i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i])
+  }
+
   return result
 }
 
 console.log(digitize(35231))
+
+//Note: I do, in fact aware of .reverse(). but it'd ruin the fun, right ? ( >u0)
